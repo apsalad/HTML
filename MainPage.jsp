@@ -14,11 +14,11 @@ function validateForm() {
         return false;
     }
     else if(!((x>'A' && x<'Z')||(x>'a' && x<'z'))){
-      alert("symbols not allowed");
+      alert("symbols not allowed in name");
       return false;
     }
     if(z.length<8){
-      alert("Minimum password length is 8");
+      alert("password length is 8");
       return false;
     }
   }
@@ -32,7 +32,7 @@ function validateForm() {
 
     <marquee direction="right"><a href="https://www.google.co.in">www.xyz.com</a></marquee><hr>
 
-    <form name="myForm" action="next.jsp" onsubmit="return validateForm()" method="POST">
+    <form name="myForm" action="LoginPage.jsp" onsubmit="return validateForm()" method="POST">
       <table>
     <tr>
       <td><label>Enter your Name:</label></td>
