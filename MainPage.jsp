@@ -8,7 +8,6 @@ function validateForm() {
     var x = document.forms["myForm"]["name"].value;
     var z = document.forms["myForm"]["password"].value;
     var e = document.forms["myForm"]["email"].value;
-
     if (x == "") {
         alert("Name must be filled out");
         return false;
@@ -26,8 +25,9 @@ function validateForm() {
 
   </head>
 
-  <body style="background-image:url('/Library/Desktop Pictures/rolling waves.jpg')">
-
+  <body  style="background-color:#99ff33;
+  margin: 10px 20px;
+  font-family: Arial;">
     <br><center><h2>Register here</h2></center>
 
     <marquee direction="right"><a href="https://www.google.co.in">www.xyz.com</a></marquee><hr>
@@ -56,8 +56,8 @@ function validateForm() {
     </tr>
     <tr>
       <td><label>Gender:</label></td>
-      <td><input type="radio" name="gender">Male
-      <input type="radio" name="gender">Female</td>
+      <td><input type="radio" name="gender" value="Male" required>Male
+      <input type="radio" name="gender" value="Female" required>Female</td>
     </tr>
     <tr>
     <td><center><input type="submit" value="Submit"></center></td>

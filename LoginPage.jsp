@@ -5,7 +5,9 @@
     <link rel="stylesheet" type="text/css" href="mystyle.css">
   </head>
 
-  <body><br><br><br>
+  <body style="background-color:#99ff33;
+  margin: 10px 20px;
+  font-family: Arial;"><br><br><br>
       <table>
     <tr>
       <td>Your Name:</td>
