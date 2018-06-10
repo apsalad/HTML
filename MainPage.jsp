@@ -12,7 +12,7 @@ function validateForm() {
         alert("Name must be filled out");
         return false;
     }
-    else if(!((x>'A' && x<'Z')||(x>'a' && x<'z'))){
+    else if(!((x=>'A' && x=<'Z')||(x=>'a' && x=<'z'))){
       alert("symbols not allowed in name");
       return false;
     }
@@ -25,12 +25,10 @@ function validateForm() {
 
   </head>
 
-  <body  style="background-color:#99ff33;
-  margin: 10px 20px;
-  font-family: Arial;">
+  <body class="ad">
     <br><center><h2>Register here</h2></center>
 
-    <marquee direction="right"><a href="https://www.google.co.in">www.xyz.com</a></marquee><hr>
+    <marquee direction="right"><a href="https://www.google.co.in"><h3>Google</h3></a></marquee><hr>
 
     <form name="myForm" action="LoginPage.jsp" onsubmit="return validateForm()" method="POST">
       <table>
